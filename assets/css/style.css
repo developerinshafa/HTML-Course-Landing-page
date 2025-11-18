@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapls.com/css2?family-Inter:ital.opsz,wght@0,14..32,100..000,1,14..32,100..000&stack+Sans+Headline:wght2200..700&display=swap');
+/* font faily link */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -140,15 +143,16 @@ header > button:hover {
 }
 .title .bennar h1{
     padding: 5px 5%;
-    margin-top: 5px;
+    margin-top: 2px;
     background-color: #294D61;
     border-radius: 20px 80px 20px; 
     color: #ffffff;
-    text-align: center;
+    display: flex;
 }
 .title p{
     margin:50px;
     margin-left:50px;
+    flex-direction: row;
 }
 
 .section{
@@ -156,9 +160,9 @@ header > button:hover {
     max-width: 1200px;
     margin: auto; 
     background-color: #aedcf1; 
-    height: 600px;
-    
-}  
+    height: 800px;
+    flex-direction: row; 
+}
 .courses-container{
     display: grid;
     gap: 15px;
@@ -179,17 +183,17 @@ header > button:hover {
     border-radius: 50px;
     padding: 20px;
     text-align: center;
-    display: flex; 
     gap:50px;
     align-items: center;
+    margin-bottom: 30px;
 }
 .container img{
-    width: 180px;
-    margin: 50px;
+    width: 200px;
+    margin: 2px;
 
 }
 .container-content p{
-    margin: 20px;
+    margin: 3px;
     color: #0c0b0b;
     font-size: 17px;
 }
@@ -223,6 +227,7 @@ header > button:hover {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 2px;
+  gap: 3rem;
   text-align: center;
 }
 
@@ -282,8 +287,15 @@ header > button:hover {
       .hero-section{
         order: 2;
       }
+      .hero-section h1{
+         text-align: center;
+      }
       .hero-section h4{
         color: #05dfe7;
+        text-align: center;
+      }
+      .hero-section p{
+        text-align:justify;
       }
       .title{
         flex-direction: column;
@@ -294,16 +306,21 @@ header > button:hover {
       object-fit: contain;
 
      }
+     .bennar .about-us{
+      text-align: center;
+     }
+     .bennar p{
+      text-align: justify;
+     }
      .section{
       display: flex;
       position: relative;
+      flex-direction: row;
       
      }
-     /* .section .course-title h2{
-      position: relative;
-      height:auto;
-      width: auto;
-     } */
+     .course-title h1{
+        display:flex;
+     }
      .container.card{
       flex-direction: row;
      }
