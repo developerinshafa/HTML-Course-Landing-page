@@ -1,4 +1,7 @@
 /* marging top, marging bottom ... */
 i.fa{
     margin-right:10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
 }

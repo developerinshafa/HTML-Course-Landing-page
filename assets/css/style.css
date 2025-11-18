@@ -8,18 +8,18 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 12px 8%;
+  padding: 10px 3%;
   background-color: transparent;
 }
 
 .logo {
   cursor: pointer;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
 
 }
 li,a,button {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   text-decoration: none;
   color: #fff;
@@ -27,20 +27,21 @@ li,a,button {
 
 nav ul li {
   display: inline-block;
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 nav ul li a {
   transition: all 0.3% ease 0%;
+  border: none;
 }
 nav ul li a:hover {
-  color: black;
+  color: rgb(5, 173, 240);
   transition: all 0.3% ease 0%;
 }
 header > button {
-  padding: 9px 25px;
+  padding: 1px 15px;
   background-color: blue;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
   outline: none;
   transition: all 0.3% ease 0%;
@@ -61,11 +62,11 @@ header > button:hover {
   content: "";
   background-image: linear-gradient(
     to right,
-    rgba(11, 21, 26, 0.95),
-    rgba(22, 60, 68, 0.95),
-    rgba(34, 112, 136, 0.9),
-    rgba(30, 164, 218, 0.85),
-    rgba(41, 230, 221, 0.95)
+    rgba(20, 169, 243, 0.95),
+    rgba(8, 112, 133, 0.95),
+    rgba(6, 44, 56, 0.9),
+    rgba(2, 28, 39, 0.85),
+    rgba(2, 44, 42, 0.95)
   );
   width: 100%;
   height: 100%;
@@ -75,12 +76,17 @@ header > button:hover {
 }
 .content {
   display: flex;
-  padding: 40px 5%;
+  padding: 20px 7%;
   justify-content: space-between;
   color: #fff;
 }
 .hero-section h1 {
-  font-size: 40px;
+  font-size: 56px;
+  line-height: 1.5;
+}
+.hero-section h4{
+    color: black;
+    line-height: 3;
 }
 .hero-section p {
   margin: 30px o;
@@ -100,9 +106,10 @@ header > button:hover {
   border: 1px solid transparent;
   padding: 0.375rem .75rem;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
   border-radius: 0.25rem;
-  transition: color 0.15% ease-in-out, background-color 0.15% ease-in-out,
+  transition: color 0.15% ease-in-out,
+  background-color 0.15% ease-in-out,
   border-color 0.15% ease-in-out, 
   box-shadow 0.15% ease-in-out;
 }
@@ -111,57 +118,201 @@ header > button:hover {
   color: #fff;
   border-color: #f3eeee;
   padding: 8px 30px;
-  margin-top: 15px;
+  margin-top: 45px;
   font-size: 700;
   cursor: pointer;
   outline: none;
+
 }
 .button-outline:hover {
   background: #ffffff;
   color: rgb(15, 17, 136);
 }
-.social-links {
-  padding: 10px;
-  margin-top: 100px;
+
+.title{
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    background-color: rgb(231, 245, 250);
 }
-.social-links ul {
-  list-style: none;
+.title .bennar h1{
+    padding: 5px 5%;
+    margin-top: 5px;
+    background-color: #294D61;
+    border-radius: 20px 80px 20px; 
+    color: #ffffff;
+    text-align: center;
+}
+.title p{
+    margin:50px;
+    margin-left:50px;
+}
+
+.section{
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: auto; 
+    background-color: #aedcf1; 
+    height: 600px;
+    
+}  
+.courses-container{
+    display: grid;
+    gap: 15px;
+    color: #0a0909;
+    margin: 10px;
+    border-radius: 50px;
+    
+}
+.section .course-title{
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 5px;
 }
-.button-social {
-  padding: 9px 25px;
-  border: none;
-  border-radius: 50px;
+.container{
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    display: flex; 
+    gap:50px;
+    align-items: center;
 }
-/* .beckground-facebook {
-  background-color: blue;
-}
-.beckground-instagram {
-  background-color: rgb(236, 6, 6);
-}
-.beckground-whatsApp {
-  background-color: rgb(3, 216, 3);
-} */
+.container img{
+    width: 180px;
+    margin: 50px;
 
+}
+.container-content p{
+    margin: 20px;
+    color: #0c0b0b;
+    font-size: 17px;
+}
+.button{
+    border: none;
+    background-color: #1f5774;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block; 
+    margin-bottom: 30px; 
+    color: #ffffff;  
+  
+}
+.button-outline:hover{
+  background-color: #ffffff;
+  color: rgb(15, 17, 136);
+}
+.container .card{
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-content: center;
+    gap: 1rem;
+    background-color:#b5e8f5;
+    border-radius: 30px;
+    align-items: center;
+    display: grid;
+}
+.card{
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2px;
+  text-align: center;
+}
+
+.footer{
+    background-color:#122D39;
+    color: #ffffff;
+    text-align: center;
+    height: 120px;
+}
+.footer h3{
+    text-align: center;
+}
+.footer p{
+    font-size: 0.9px;
+    margin-top: 10px;
+    display: block;
+
+}
 /* Mobile Responsive */
-@media(max-width:600px){
-    .content{
-        flex-direction:column;
-        height:400px;
-        padding:30px 10px;
-    }
-    .content .hero-section{
-        align-items: center;
+@media Screen and (max-width:calc(41.25rem)){
 
-    }
-    .content .hero-section h1{
-        font-size:1 6px;
+      header nav ul li .mobile_hamburger .icon, .navbar_section .mobile_close .icon{
+        font-size: var(--fontsize-32);
+       margin: 10px;
+      }
+      header{
+        height: 60px;
+        width: 375px;
+        
+      }
+      header button{
+        display: none;
 
-    }.content img{
-        weight:20px;
-    }
+      }
+      header ul li{
+        margin: 1px;
+        padding: 7px;
+        color: #0a0909;
+      }
+      .logo {
+        cursor: pointer;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+        height: 40px;
+        width: 100px;
+      }
+      .hero-section .button{
+        display:none;
+      }
 
+      .content{
+      flex-direction: column;
+      background: inherit;
+      
+      }
+      .hero-section{
+        order: 2;
+      }
+      .hero-section h4{
+        color: #05dfe7;
+      }
+      .title{
+        flex-direction: column;
+      }
+      .content img{
+      width:100%;
+      height: 100%;
+      object-fit: contain;
 
-
+     }
+     .section{
+      display: flex;
+      position: relative;
+      
+     }
+     /* .section .course-title h2{
+      position: relative;
+      height:auto;
+      width: auto;
+     } */
+     .container.card{
+      flex-direction: row;
+     }
+     .card{
+      height: 300px;
+     }
+     .card img{
+      height: 90px;
+      width: 80px;
+     }
+     
 }
